@@ -69,3 +69,11 @@ let a = [1, 2];
 let b = {"a" : 1}
 let c = (ele)=>ele * 2;
 ```
+
+# Difference between `==` and `===`:
+|S.No|`==`|`===`|
+|----|----|-----|
+|**1.**|`==` is a relational operator which takes two operands|`===` is a relational operator which also takes two operands|
+|**2.**|`==` will compares the value not its data type|`===` will compares the value as well as data type.|
+|**3.**|In `==` type coversion will occur implicitily|In `===` the type coversion will not occur.|
+|**4.**|For example` 5 == '5'` will return `true`.|For example `5 === '5'` will return `false`.|
