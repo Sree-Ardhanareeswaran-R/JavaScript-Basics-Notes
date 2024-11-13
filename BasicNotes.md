@@ -70,7 +70,11 @@ let b = {"a" : 1}
 let c = (ele)=>ele * 2;
 ```
 
-# Difference between `==` and `===`:
+# Input Method:
+&nbsp; In javascript we can take inputs from user in so many ways. The first method is `prompt`. The prompt is used to take input from user in console directly. It takes the non mandatory arguments which is string that will be display during the code is loaded. The second way is through input field HTML tag. The user can give input through for form input field. By using DOM concept we can fetch the data from the field directly. By using the `value` attribute we can import the text written by user. By using `addEventListner` we can get the value by some action like `submit` or `input`. These are the ways to get the user input value. 
+
+# Operators:
+## Difference between `==` and `===`:
 |S.No|`==`|`===`|
 |----|----|-----|
 |**1.**|`==` is a relational operator which takes two operands|`===` is a relational operator which also takes two operands|
@@ -78,14 +82,25 @@ let c = (ele)=>ele * 2;
 |**3.**|In `==` type coversion will occur implicitily|In `===` the type coversion will not occur.|
 |**4.**|For example` 5 == '5'` will return `true`.|For example `5 === '5'` will return `false`.|
 
-# Input Method:
-&nbsp; In javascript we can take inputs from user in so many ways. The first method is `prompt`. The prompt is used to take input from user in console directly. It takes the non mandatory arguments which is string that will be display during the code is loaded. The second way is through input field HTML tag. The user can give input through for form input field. By using DOM concept we can fetch the data from the field directly. By using the `value` attribute we can import the text written by user. By using `addEventListner` we can get the value by some action like `submit` or `input`. These are the ways to get the user input value. 
-
-# Difference Between `&` and `&&`:
+## Difference Between `&` and `&&`:
 |**S.No**|**`&`**|**`&&`**|
 |--------|-------|--------|
 |**1.**|**`&`** is a bitwise operator|**`&&`** is a logical operator|
 |**2.**|**`&`** takes two operands as number|**`&&`** will takes two operands as boolean value.|
 |**3.**|**`&`** return a number datatype.|**`&&`** return a boolean datatype|
 |**4.**|It converts the given number into binary number and compares two numbers if both are one it return one if anyone is zero it returns zero after collecting all binary numbers it convert it into number and display to us|It takes two boolean value. If two boolean value is true it returns true if anyone is false it returns false.|
+
+# Function:
+&nbsp; The function can be defined as the block of statement which used to some specific task when ever it is called. The function are first class citizen because these function can be stored in a variable, function can be passed or taken as arguments to another function. The function can be classified into three types. They are:
+1. Function declaration
+2. Function Expression
+3. Arrow Function
+
+## Function Declaration:
+&nbsp; The function declaration is a way to declare a function using the function keyword which will be followed by a identifier and paranthesis where we can pass arguments. The block of code is written inside the braces. If we print the function address we get actual function as output. These function can be called before its declaration. For Example:
+```js
+main();
+function main(){
+    console.log("Hello World");
+}
 
